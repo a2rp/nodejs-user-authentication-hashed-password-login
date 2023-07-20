@@ -1,0 +1,23 @@
+### a2rp
+GET http://localhost:1198/a2rp
+
+### all users
+GET http://localhost:1198/users
+
+### user register
+POST http://localhost:1198/user/register
+Content-Type: application/json
+
+{
+    "name": "user3",
+    "password": "password456"
+}
+
+### login user
+POST http://localhost:1198/user/login
+Content-Type: application/json
+
+{
+    "name": "user3",
+    "password": "password456"
+}
