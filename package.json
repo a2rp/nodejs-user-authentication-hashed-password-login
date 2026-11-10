@@ -1,20 +1,30 @@
 {
-    "name": "nodejs-user-authentication-password-login",
+    "name": "nodejs-user-authentication-hashed-password-login",
     "version": "1.0.0",
-    "description": "",
+    "description": "Educational Express API demonstrating bcrypt password hashing and verification with an in-memory user store.",
     "main": "index.js",
     "scripts": {
-        "devStart": "nodemon ./index.js"
+        "start": "node ./index.js",
+        "dev": "nodemon ./index.js"
     },
-    "keywords": [],
+    "keywords": [
+        "bcrypt",
+        "express",
+        "nodejs",
+        "password-hashing",
+        "authentication-demo"
+    ],
     "author": "",
     "license": "ISC",
+    "engines": {
+        "node": ">=22"
+    },
     "dependencies": {
-        "bcrypt": "^5.1.0",
+        "bcrypt": "^6.0.0",
+        "dotenv": "^16.3.1",
         "express": "^4.18.2"
     },
     "devDependencies": {
-        "dotenv": "^16.3.1",
         "nodemon": "^3.0.1"
     }
 }
